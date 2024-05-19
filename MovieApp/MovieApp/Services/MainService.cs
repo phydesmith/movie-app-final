@@ -59,6 +59,8 @@ namespace MovieApp.Services
             Console.WriteLine("Press any key to continue to delete...");
             Console.ReadKey();
             Console.WriteLine($"Movie deleted: {_repository.DeleteMovie(newMovie.Title)}");
+
+            //  
         }
 
     }

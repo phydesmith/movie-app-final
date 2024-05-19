@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <header>
+            <h1> Movie Dashboard </h1>
+        </header>
+        <div class="content" id="content-container">
+            <header>
+                <nav>
+                    <div class="table-header">
+                        <ul class="tabs">
+                            <li class="active" data-sectionid="movie-section">All Movies</li>
+                            <li data-sectionid="user-section">All Users</li>
+                            <li data-sectionid="create-movie-section">Create Movie</li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section id="movie-section">
+                <table id="movieTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Title</th>
+                            <th>Release Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    </tbody>
+                </table>
+            </section>
+            <section id="user-section" class="hidden">
+                <table id="userTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>ZipCode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </section>
+            <section  id="create-movie-section" class="hidden">
+                <div class="create-movie">
+                    <header>
+                        <h3>Add Movie:</h3>
+                    </header>
+                    <form id="movie-form">
+                        <label for="movie-title">Movie Name:</label>
+                        <input type="text" name="movie-title" id="movie-title">
+                        <label for="movie-date">Release Date:</label>
+                        <input type="date" name="movie-date" id="movie-date">
+                        <button type="submit"> Submit </button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
